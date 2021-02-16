@@ -10,7 +10,15 @@ p {
 
 
 /* nav */
-
+.mydropdown-menu {
+    top: 182%;
+}
+.profile-dropdown-menu {
+    top: 114%;
+}
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
 .search-bar {
     border: 1px solid  rgb(219, 227, 231);
     border-radius: 25px;
@@ -19,8 +27,7 @@ p {
     margin-right: 32px;
 }
 .navbar-expand-lg .navbar-nav .mynav-link {
-    padding: 11px 17px;
-    /* padding: 0 17px; */
+    padding: 0 17px;
 }
 
 .user-name {
@@ -36,15 +43,17 @@ p {
     position: absolute;
     height: 6px;
     width: 6px;
-    top: 14px;
-    left: 34px;
+    top: 0px;
     background-size: contain;
 }
 .navbar-height {
-    line-height: 30px;
+    line-height: 52px;
 }
 .header-section {
     border-bottom: 1px solid #e9f1f3;
+}
+.navbar .navbar-nav .nav-item, .navbar .dropdown .dropdown-menu {
+    line-height: 1.5;
 }
 
 
@@ -62,8 +71,7 @@ p {
     padding: 9px 0;
 }
 .cont {
-    margin-left: 0;
-    max-width: 1428px !important;
+    max-width: 1440px !important;
 }
 .sidebar-style {
     list-style: none;
@@ -80,6 +88,7 @@ p {
     height: 100%;
     top: 69px;
     overflow: scroll;
+    z-index: 100;
 }
 .sidebar-link, .sidebar-sublink {
     font-size: 15px;
@@ -135,12 +144,12 @@ p {
 }
   
 
-.small-sidebar ul span, .small-sidebar .side-li div img {
+.small-sidebar ul span, .small-sidebar .side-li div img, .small-sidebar .support-link, .small-sidebar .list-style-none{
     display: none;
 }
 .small-sidebar.side-bar {
     width: 75px;
-    top: 75px;
+    top: 69px;
 }
 .small-sidebar .nav-small-cap {
     display: block;
@@ -148,7 +157,7 @@ p {
     filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%) hue-rotate(154deg) brightness(88%) contrast(80%);
 }
   
-.small-sidebar:hover ul span, .side-bar:hover .side-li div img {
+.small-sidebar:hover ul span, .small-sidebar:hover .side-li div img, .small-sidebar:hover .support-link, .small-sidebar:hover .list-style-none {
     display: inline-block;
 }
 .small-sidebar:hover {
@@ -158,6 +167,9 @@ p {
 .small-sidebar:hover .nav-small-cap {
     display: none;
 } 
+.small-sidebar + .main-containt {
+    margin-left: 75px;
+}
 
 
 
@@ -179,7 +191,7 @@ p {
 
 .main-containt {
     margin-left: 265px;
-    padding: 90px 20px 0 32px;
+    padding: 90px 32px 0 32px;
 }
 .create-btn-group {
     border-radius: 3px;
@@ -289,6 +301,9 @@ p {
     color: #525c65;
     padding-left: 14px;
 }
+.daniel-pro:hover, .recent-user-name:hover, .asigned-user-name:hover {
+    color: rgb(0, 158, 251);
+}
 .uiux-design {
     color: #54667a;
     font-size: 14px;
@@ -380,6 +395,12 @@ p {
 
 
 /* table */
+.border-left {
+    border-left: 3px solid transparent;
+}
+tr:hover .border-left {
+    border-left: 3px solid rgb(0, 158, 251);
+}  
 .asigned-user-name {
     font-size: 14px;
     color: rgb(100, 116, 133);
@@ -395,9 +416,7 @@ p {
     color: rgb(178, 185, 196);
     font-weight: 500;
 }
-.mytable {
-    margin-left: 6px;
-}
+
 th.table-header, td {
     border-bottom: 1px solid rgb(233, 241, 243) !important;
 }
@@ -503,20 +522,29 @@ table td {
       max-width: 1416px;
     }
 }
-@media (max-width: 1200px) {
-   
+@media (max-width: 1300px) {
+   .side-p {
+       padding-left: 0;
+       padding-right: 0;
+   }
+   .card-box {
+        padding: 21px 14px;
+    }
 }
 @media (max-width: 992px) {
     .collapsing, .collapse.show {
         display: flex;
     }
     .nav-search-bar {
-        top: 53px;
+        top: 70px;
         box-shadow: 0px 1px 3px 0px rgba(29, 26, 27, 0.2);
         border-radius: 25px;
         z-index: 100;
     }
-    ul span, .side-li div img {
+    .main-containt {
+        margin-left: 75px;
+    }
+    ul span, .side-li div img, .side-bar .list-style-none {
         display: none;
     }
     .side-bar {
@@ -528,7 +556,7 @@ table td {
         padding: 0 34px;
         filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%) hue-rotate(154deg) brightness(88%) contrast(80%);
     }
-    .side-bar:hover ul span, .side-bar:hover .side-li div img {
+    .side-bar:hover ul span, .side-bar:hover .side-li div img, .side-bar:hover .support-link, .side-bar:hover .list-style-none {
         display: inline-block;
     }
     .side-bar:hover {
@@ -537,5 +565,33 @@ table td {
     }
     .side-bar:hover .nav-small-cap {
         display: none;
+    }
+}
+@media (max-width: 575px) { 
+    .side-bar {
+        width: 265px; 
+        top: 69px;
+    }
+    .minimize-sidebar {
+        display: none;
+    }
+    ul span, .side-li div img {
+        display: inline-block;
+    }
+    .nav-small-cap {
+        display: none;
+    }
+    .main-containt {
+        margin-left: 0;
+    }
+    
+}
+@media (max-width: 356px){
+    .seprator {
+        padding: 0 15px;
+        margin: 0 15px;
+    }
+    .card-total-counts {
+        font-size: 21px;
     }
 }

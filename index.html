@@ -19,7 +19,10 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light navbar-height">
                 <div class="container-fluid px-0">
-                    <a class="navbar-brand logo-r-p" href="#"><img class="d-none d-sm-block" src="./images/logo.png" alt=""><img class="d-block d-sm-none" src="./images/logo-icon.png" alt=""></a>
+                    <div class="d-flex align-items-center">
+                        <a class="navbar-brand logo-r-p" href="#"><img class="d-none d-sm-block" src="./images/logo.png" alt=""><img class="d-block d-sm-none" src="./images/logo-icon.png" alt=""></a>
+                        <a href="#" class="me-3 d-sm-none icon-hover toggle-sidebar"><img src="./images/collapse-btn.png" alt=""></a>
+                    </div>
                     <div class="collapse position-absolute nav-search-bar w-100 overflow-hidden" id="collapseExample">
                         <div class="input-group search-input-height">
                           <span class="input-group-text bg-white border-0" id="basic-addon1"><img src="./images/search-icon.png"
@@ -42,38 +45,38 @@
                     
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <a href="#" class="me-3 d-none d-lg-block icon-hover collapse-btn"><img src="./images/collapse-btn.png" alt=""></a>
-                        <ul class="navbar-nav mb-0 mb-lg-2 mb-lg-0 d-flex flex-row">
+                        <ul class="navbar-nav mb-0 d-flex flex-row">
                             <li class="nav-item dropdown">
                                 <a class="nav-link mynav-link show-notification-dot ps-1 ps-lg-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img class="icon-hover" src="./images/nav-msg.png" alt="">
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu position-absolute mydropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link mynav-link show-notification-dot" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img class="icon-hover" src="./images/nav-msgcover.png" alt="">
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu position-absolute mydropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link mynav-link show-notification-dot" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img class="icon-hover" src="./images/notification-bell.png" alt="">
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu position-absolute mydropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -89,7 +92,7 @@
                             <span class="user-name d-none d-sm-inline">Mark Sanders</span>
                             <img class="icon-hover" src="./images/dropdown-arrow.png" alt="">
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <ul class="dropdown-menu dropdown-menu-end profile-dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -101,8 +104,8 @@
         </div>
     </header>
 
-    <div class="container px-0 cont">
-        <aside class="side-bar position-fixed big-sidebar">
+    <div class="container px-0 cont mx-0">
+        <aside class="side-bar position-fixed big-sidebar minimize-sidebar">
             <div>
                 <ul class="sidebar-style p-0">
                     <li>
@@ -373,7 +376,7 @@
     
         <main class="main-containt">
             <section class="breadcrumb-section">
-                <div class="d-flex flex-lg-row flex-column">
+                <div class="d-flex flex-md-row flex-column">
                     <div class="align-self-center">
                         <h3 class="mb-0 Dashboard-title">Dashboard</h3>
                         <nav class="mb-1 pt-1" style="--bs-breadcrumb-divider: url(../images/right-arrow.png);" aria-label="breadcrumb">
@@ -384,8 +387,8 @@
                         </nav>
                     </div>
                 
-                    <div class="ms-auto d-flex align-items-center">
-                        <div class="me-2">
+                    <div class="mx-auto mx-md-0 ms-md-auto d-flex flex-sm-row flex-column align-items-center mt-3 mt-sm-0">
+                        <div class="me-2 my-3 my-sm-0 ">
                             <select class="form-select shadow-none myselecet border-0" aria-label="Default select example">
                                 <option selected>January 2021</option>
                                 <option value="1">February 2021</option>
@@ -416,7 +419,7 @@
     
             <section>
                 <div class="row gx-3">
-                    <div class="col-xl-3 col-lg-6 mb-3">
+                    <div class="col-xl-3 col-sm-6 mb-3">
                         <div class="d-flex justify-content-between progress-box h-100">
                             <div class="px-1">
                                 <h6 class="total-counts">86</h6>
@@ -427,7 +430,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 mb-3">
+                    <div class="col-xl-3 col-sm-6 mb-3">
                         <div class="d-flex progress-box justify-content-between h-100">
                             <div>
                                 <h6 class="total-counts">248</h6>
@@ -438,7 +441,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 mb-3">
+                    <div class="col-xl-3 col-sm-6 mb-3">
                         <div class="d-flex progress-box justify-content-between h-100">
                             <div>
                                 <h6 class="total-counts">352</h6>
@@ -449,7 +452,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 mb-3">
+                    <div class="col-xl-3 col-sm-6 mb-3">
                         <div class="d-flex progress-box justify-content-between h-100">
                             <div>
                                 <h6 class="total-counts">159</h6>
@@ -468,7 +471,7 @@
                     <div class="col-12">
                         <div class="chart-box mb-3">
                             <div class="chart-container">
-                                <div class="d-flex flex-xl-row flex-column justify-content-between sale-comp">
+                                <div class="d-flex flex-md-row flex-column justify-content-between sale-comp">
                                     <div>
                                         <h4 class="chart-h mb-0">Sales Comparison</h4>
                                         <select class="form-select shadow-none myselecet border-0 bg-white p-0 d-inline-block w-65" aria-label="Default select example">
@@ -500,133 +503,137 @@
 
             <section>
                 <div class="row gx-3">
-                    <div class="col">
-                        <div class="card-box mb-3">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h4 class="c-title mb-0">Sales of the Month</h4>
-                                </div>
-                                <div>
-                                    <select class="form-select card-select border-0 shadow-none" aria-label="Default select example">
-                                        <option selected>January 2017</option>
-                                        <option value="1">February 2017</option>
-                                        <option value="2">March 2017</option>
-                                        <option value="3">April 2017</option>
-                                      </select>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center my-4">
-                                <div>
-                                    <img class="img-fluid" src="./images/sale-of-the-month.png" alt="">
-                                </div>
-                            </div>
-                            <div class="tags mb-2">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="d-flex align-items-center mb-2">
-                                            <div class="b-purple-dot me-2"></div>
-                                            <p class="tag-p mb-0">Organic</p>
+                    <div class="col-xl-8">
+                        <div class="row gx-3">
+                            <div class="col-md-6 col-xl">
+                                <div class="card-box mb-3">
+                                    <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center">
+                                        <div>
+                                            <h4 class="c-title mb-0">Sales of the Month</h4>
+                                        </div>
+                                        <div>
+                                            <select class="form-select card-select border-0 shadow-none" aria-label="Default select example">
+                                                <option selected>January 2017</option>
+                                                <option value="1">February 2017</option>
+                                                <option value="2">March 2017</option>
+                                                <option value="3">April 2017</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="d-flex align-items-center mb-2">
-                                            <div class="b-blue-dot me-2"></div>
-                                            <p class="tag-p mb-0">Marketing</p>
+                                    <div class="d-flex justify-content-center my-4">
+                                        <div>
+                                            <img class="img-fluid" src="./images/sale-of-the-month.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tags mb-2">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <div class="b-purple-dot me-2"></div>
+                                                    <p class="tag-p mb-0">Organic</p>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <div class="b-blue-dot me-2"></div>
+                                                    <p class="tag-p mb-0">Marketing</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="d-flex align-items-center mb-md-2">
+                                                    <div class="b-green-dot me-2"></div>
+                                                    <p class="tag-p mb-0">Search Engine</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="d-flex align-items-center mb-2">
-                                            <div class="b-green-dot me-2"></div>
-                                            <p class="tag-p mb-0">Search Engine</p>
+                            </div>
+                            <div class="col-md-6 col-xl">
+                                <div class="card-box px-0 py-3 mb-3">
+                                    <div class="d-flex flex-sm-row flex-column  justify-content-between align-items-center mb-4">
+                                        <div>
+                                            <h4 class="c-title c-s-title mb-0">Sales Difference</h4>
+                                        </div>
+                                        <div>
+                                            <select class="form-select card-select border-0 shadow-none" aria-label="Default select example">
+                                                <option>January 2017</option>
+                                                <option selected value="1">February 2017</option>
+                                                <option value="2">March 2017</option>
+                                                <option value="3">April 2017</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between px-4 mb-md-2">
+                                        <div class="py-4">
+                                            <h6 class="card-total-counts mb-1">$4316</h6>
+                                            <p class="total-sales mb-0">(150-165 Sales)</p>
+                                        </div>
+                                        <div>
+                                            <img class="pe-1 img-fluid" src="./images/sale-diffence.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-box px-0 py-3 mb-3">
+                                    <div class="d-flex flex-sm-row flex-column  justify-content-between align-items-center mb-4">
+                                        <div>
+                                            <h4 class="c-title c-s-title mb-0">Sales Prediction</h4>
+                                        </div>
+                                        <div>
+                                            <select class="form-select card-select border-0 shadow-none" aria-label="Default select example">
+                                                <option>January 2017</option>
+                                                <option selected value="1">February 2017</option>
+                                                <option value="2">March 2017</option>
+                                                <option value="3">April 2017</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between px-4 mb-md-1">
+                                        <div class="py-4">
+                                            <h6 class="card-total-counts mb-1">$3528</h6>
+                                            <p class="total-sales mb-0">(150-165 Sales)</p>
+                                        </div>
+                                        <div>
+                                            <img class="img-fluid mt-3" src="./images/sales-prediction.png" alt="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card-box px-0 py-3 mb-3">
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <div>
-                                    <h4 class="c-title c-s-title mb-0">Sales Difference</h4>
-                                </div>
-                                <div>
-                                    <select class="form-select card-select border-0 shadow-none" aria-label="Default select example">
-                                        <option>January 2017</option>
-                                        <option selected value="1">February 2017</option>
-                                        <option value="2">March 2017</option>
-                                        <option value="3">April 2017</option>
-                                      </select>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between px-4 mb-2">
-                                <div class="py-4">
-                                    <h6 class="card-total-counts mb-1">$4316</h6>
-                                    <p class="total-sales mb-0">(150-165 Sales)</p>
-                                </div>
-                                <div>
-                                    <img class="pe-1 img-fluid" src="./images/sale-diffence.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-box px-0 py-3 mb-3">
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <div>
-                                    <h4 class="c-title c-s-title mb-0">Sales Prediction</h4>
-                                </div>
-                                <div>
-                                    <select class="form-select card-select border-0 shadow-none" aria-label="Default select example">
-                                        <option>January 2017</option>
-                                        <option selected value="1">February 2017</option>
-                                        <option value="2">March 2017</option>
-                                        <option value="3">April 2017</option>
-                                      </select>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between px-4 mb-1">
-                                <div class="py-4">
-                                    <h6 class="card-total-counts mb-1">$3528</h6>
-                                    <p class="total-sales mb-0">(150-165 Sales)</p>
-                                </div>
-                                <div>
-                                    <img class="img-fluid mt-3" src="./images/sales-prediction.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
+                    <div class="col-xl-4">
                         <div class="card-box side-p">
-                            <div class="d-flex justify-content-between mt-3 ">
-                                <div>
-                                    <img class="img-fluid" src="./images/danil-pic.png" alt="">
+                            <div class="d-flex flex-xl-row flex-column justify-content-between mt-3 ">
+                                <div class="d-flex justify-content-center mb-3 mb-xl-0">
+                                    <div><img class="img-fluid " src="./images/danil-pic.png" alt=""></div>
                                 </div>
-                                <div class="pe-3">
-                                    <h4 class="daniel-pro mb-0 ps-0">Daniel Kristeen</h4>
+                                <div class="pe-sm-3 text-center">
+                                    <a href="#" class="text-decoration-none"><h4 class="daniel-pro mb-0 ps-0">Daniel Kristeen</h4></a>
                                     <p class="uiux-design">UIUX Designer</p>
                                     <button class="btn follow-btn text-uppercase"><img class="me-2" src="./images/plus-icon.png" alt="">Follow</button>
                                 </div>
                             </div>
 
-                            <div class="d-flex my-4">
-                                <div class="">
+                            <div class="d-flex my-4 justify-content-center justify-content-xl-start">
+                                <div class="text-center">
                                     <h6 class="card-total-counts mb-1">14</h6>
                                     <p class="p-tag mb-0">Photos</p>
                                 </div>
-                                <div class="seprator">
+                                <div class="seprator text-center">
                                     <h6 class="card-total-counts mb-1">54</h6>
                                     <p class="p-tag mb-0">Videos</p>
                                 </div>
-                                <div class="">
+                                <div class="text-center">
                                     <h6 class="card-total-counts mb-1">145</h6>
                                     <p class="p-tag mb-0">Tasks</p>
                                 </div>
                             </div>
-                            <p class="profile-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                            <p class="profile-p text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
                         </div>
                         <div class="card-box border-top-0 side-p mb-3">
-                            <div class="d-flex justify-content-between py-1">
+                            <div class="d-flex  justify-content-around justify-content-xl-between py-1">
                                 <div class="icon-hover">
                                     <a href="#"><img src="./images/earth.png" alt=""></a>
                                 </div>
@@ -650,9 +657,9 @@
 
             <section>
                 <div class="row gx-3">
-                    <div class="col-lg-8">
-                        <div class="card-box pb-0">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div class="col-xl-8 mb-3 mb-xl-0">
+                        <div class="card-box pb-0 overflow-auto">
+                            <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center mb-2">
                                 <div>
                                     <h4 class="c-title mb-0">Projects of the Month</h4>
                                 </div>
@@ -665,7 +672,7 @@
                                       </select>
                                 </div>
                             </div>
-                            <table class="table mytable">
+                            <table class="table text-nowrap">
                                 <thead>
                                   <tr class="">
                                     <th class="table-header col1" scope="col">Assigned</th>
@@ -677,92 +684,92 @@
 
                                 <tbody>
                                   <tr>
-                                    <td>
+                                    <td class="border-left">
                                         <div class="d-flex align-items-center">
-                                            <div><img class="img-fluid me-2" src="./images/sunil-pic.png" alt=""></div>
+                                            <div><img class="me-2" src="./images/sunil-pic.png" alt=""></div>
                                             <div>
-                                                <h4 class="mb-0 asigned-user-name">Sunil Joshi</h4>
+                                                <a href="#" class="text-decoration-none"><h4 class="mb-0 asigned-user-name">Sunil Joshi</h4></a>
                                                 <p class="user-work mb-0">Web Designer</p>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="t-user-name align-middle">Elite Admin</td>
-                                    <td><span class="low-badge">Low</span></td>
+                                    <td><span class="low-badge align-middle">Low</span></td>
                                     <td class="budget align-middle">$3.9K</td>
                                   </tr>
 
                                   <tr>
-                                    <td>
+                                    <td class="border-left">
                                         <div class="d-flex align-items-center">
-                                            <div><img class="img-fluid me-2" src="./images/andrev-pic.png" alt=""></div>
+                                            <div><img class="me-2" src="./images/andrev-pic.png" alt=""></div>
                                             <div>
-                                                <h4 class="mb-0 asigned-user-name">Andrew MacDownland</h4>
+                                                <a href="#" class="text-decoration-none"><h4 class="mb-0 asigned-user-name">Andrew MacDownland</h4></a>
                                                 <p class="user-work mb-0">Project Manager</p>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="t-user-name align-middle">Real Homes WP Theme</td>
-                                    <td><span class="medium-badge">Medium</span></td>
+                                    <td><span class="medium-badge align-middle">Medium</span></td>
                                     <td class="budget align-middle">$24.5K</td>
                                   </tr>
 
                                   <tr>
-                                    <td>
+                                    <td class="border-left">
                                         <div class="d-flex align-items-center">
-                                            <div><img class="img-fluid me-2" src="./images/charis-pic.png" alt=""></div>
+                                            <div><img class="me-2" src="./images/charis-pic.png" alt=""></div>
                                             <div>
-                                                <h4 class="mb-0 asigned-user-name">Christopher Jamil</h4>
+                                                <a href="#" class="text-decoration-none"><h4 class="mb-0 asigned-user-name">Christopher Jamil</h4></a>
                                                 <p class="user-work mb-0">SEO Manager</p>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="t-user-name align-middle">MedicalPro WP Theme</td>
-                                    <td><span class="high-badge">High</span></td>
+                                    <td><span class="high-badge align-middle">High</span></td>
                                     <td class="budget align-middle">$12.8K</td>
                                   </tr>
 
                                   <tr>
-                                    <td>
+                                    <td class="border-left">
                                         <div class="d-flex align-items-center">
-                                            <div><img class="img-fluid me-2" src="./images/nirav-pic.png" alt=""></div>
+                                            <div><img class="me-2" src="./images/nirav-pic.png" alt=""></div>
                                             <div>
-                                                <h4 class="mb-0 asigned-user-name">Nirav Joshi</h4>
+                                                <a href="#" class="text-decoration-none"><h4 class="mb-0 asigned-user-name">Nirav Joshi</h4></a>
                                                 <p class="user-work mb-0">Frontend Engineer</p>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="t-user-name align-middle">Hosting Press HTML</td>
-                                    <td><span class="low-badge">Low</span></td>
+                                    <td><span class="low-badge align-middle">Low</span></td>
                                     <td class="budget align-middle">$2.4K</td>
                                   </tr>
 
                                   <tr>
-                                    <td>
+                                    <td class="border-left">
                                         <div class="d-flex align-items-center">
-                                            <div><img class="img-fluid me-2" src="./images/micheal-pic.png" alt=""></div>
+                                            <div><img class="me-2" src="./images/micheal-pic.png" alt=""></div>
                                             <div>
-                                                <h4 class="mb-0 asigned-user-name">Micheal Doe</h4>
+                                                <a href="#" class="text-decoration-none"><h4 class="mb-0 asigned-user-name">Micheal Doe</h4></a>
                                                 <p class="user-work mb-0">Content Writerr</p>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="t-user-name align-middle">Helping Hands WP Theme</td>
-                                    <td><span class="low-badge">Low</span></td>
+                                    <td><span class="low-badge align-middle">Low</span></td>
                                     <td class="budget align-middle">$9.3K</td>
                                   </tr>
 
                                   <tr>
-                                    <td class="border-0">
+                                    <td class="border-left border-bottom-0">
                                         <div class="d-flex align-items-center">
-                                            <div><img class="img-fluid me-2" src="./images/johnat-pic.png" alt=""></div>
+                                            <div><img class="me-2" src="./images/johnat-pic.png" alt=""></div>
                                             <div>
-                                                <h4 class="mb-0 asigned-user-name">Johnathan Rhodes</h4>
+                                                <a href="#" class="text-decoration-none"><h4 class="mb-0 asigned-user-name">Johnathan Rhodes</h4></a>
                                                 <p class="user-work mb-0">Digital Agency PSD</p>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="t-user-name align-middle border-0">MedicalPro WP Theme</td>
-                                    <td class="border-0"><span class="high-badge">High</span></td>
+                                    <td class="border-0"><span class="high-badge align-middle">High</span></td>
                                     <td class="budget border-0 align-middle">$2.6K</td>
                                   </tr>
                                 </tbody>
@@ -770,43 +777,43 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
-                        <div class="card-box px-4">
+                    <div class="col-xl-4">
+                        <div class="card-box px-sm-4">
                             <div>
                                 <h4 class="c-title mb-4 mt-1">Recent Activities</h4>
                             </div>
                             <div class="d-flex align-items-center activities-margin">
-                                <div><img class="img-fluid me-3" src="./images/jullian-pic.png" alt=""></div>
+                                <div class="me-3"><img class="img-fluid" src="./images/jullian-pic.png" alt=""></div>
                                 <div>
-                                    <h4 class="mb-0 recent-user-name mb-2">Julian Josephs <span class="activity-of-user">Uploaded a Photo</span></h4>
+                                    <a href="#" class="text-decoration-none"><h4 class="mb-0 recent-user-name mb-2">Julian Josephs <span class="activity-of-user">Uploaded a Photo</span></h4></a>
                                     <p class="date-time mb-0">10:20 AM   20  may 2016</p>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center activities-margin">
-                                <div><img class="img-fluid me-3" src="./images/daniel-pic.png" alt=""></div>
+                                <div class="me-3"><img class="img-fluid" src="./images/daniel-pic.png" alt=""></div>
                                 <div>
-                                    <h4 class="mb-0 recent-user-name mb-2">Daniel <span class="activity-of-user">commented on post #31</span></h4>
+                                    <a href="#" class="text-decoration-none"><h4 class="mb-0 recent-user-name mb-2">Daniel <span class="activity-of-user">commented on post #31</span></h4></a>
                                     <p class="date-time mb-0">10:20 AM   20  may 2016</p>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center activities-margin">
-                                <div><img class="img-fluid me-3" src="./images/hanna-pic.png" alt=""></div>
+                                <div class="me-3"><img class="img-fluid" src="./images/hanna-pic.png" alt=""></div>
                                 <div>
-                                    <h4 class="mb-0 recent-user-name mb-2">Hanna Gover <span class="activity-of-user">Published post #451</span></h4>
+                                    <a href="#" class="text-decoration-none"><h4 class="mb-0 recent-user-name mb-2">Hanna Gover <span class="activity-of-user">Published post #451</span></h4></a>
                                     <p class="date-time mb-0">10:20 AM   20  may 2016</p>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center activities-margin">
-                                <div><img class="img-fluid me-3" src="./images/sophia-pic.png" alt=""></div>
+                                <div class="me-3"><img class="img-fluid" src="./images/sophia-pic.png" alt=""></div>
                                 <div>
-                                    <h4 class="mb-0 recent-user-name mb-2">Sophia <span class="activity-of-user">Published post #452</span></h4>
+                                    <a href="#" class="text-decoration-none"><h4 class="mb-0 recent-user-name mb-2">Sophia <span class="activity-of-user">Published post #452</span></h4></a>
                                     <p class="date-time mb-0">10:20 AM   20  may 2016</p>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center mb-4">
-                                <div><img class="img-fluid me-3" src="./images/krishan-pic.png" alt=""></div>
+                                <div class="me-3"><img class="img-fluid" src="./images/krishan-pic.png" alt=""></div>
                                 <div>
-                                    <h4 class="mb-0 recent-user-name mb-2">Krishnan <span class="activity-of-user">Modified a post #452</span></h4>
+                                    <a href="#" class="text-decoration-none"><h4 class="mb-0 recent-user-name mb-2">Krishnan <span class="activity-of-user">Modified a post #452</span></h4></a>
                                     <p class="date-time mb-0">10:20 AM   20  may 2016</p>
                                 </div>
                             </div>
@@ -817,7 +824,7 @@
             </section>
             
             <footer>
-                <p class="footer-p">All Rights Reserved by Monster Admin Template. Designed and Developed by <a href="#" class="text-decoration-none footer-theamdesigner">Theme Designer</a> .</p>
+                <p class="footer-p text-center">All Rights Reserved by Monster Admin Template. Designed and Developed by <a href="#" class="text-decoration-none footer-theamdesigner">Theme Designer</a> .</p>
             </footer>
         </main>
     </div>

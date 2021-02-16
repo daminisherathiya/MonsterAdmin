@@ -82,3 +82,9 @@ function collapse_sidebar() {
     //      element.style.display = element.style.display === 'none' ? '' : 'none';
     //  });
 }
+var toggle_sidebar = document.querySelector(".toggle-sidebar");
+toggle_sidebar.addEventListener("click", minimize_sidebar);
+function minimize_sidebar() {
+    var side_bar = document.querySelector(".side-bar");
+    side_bar.classList.toggle("minimize-sidebar");
+}
