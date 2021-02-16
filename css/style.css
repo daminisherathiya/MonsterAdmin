@@ -395,10 +395,11 @@ p {
 
 
 /* table */
+
 .border-left {
     border-left: 3px solid transparent;
 }
-tr:hover .border-left {
+tr:hover .border-left, li.border-left:hover{
     border-left: 3px solid rgb(0, 158, 251);
 }  
 .asigned-user-name {
@@ -544,7 +545,7 @@ table td {
     .main-containt {
         margin-left: 75px;
     }
-    ul span, .side-li div img, .side-bar .list-style-none {
+    ul span, .side-li div img, .side-bar .list-style-none, .side-bar .support-link {
         display: none;
     }
     .side-bar {
