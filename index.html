@@ -7,108 +7,368 @@
 
     <!-- Bootstrap CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/dashboard1.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Dashbord 1</title>
+    <link rel="icon" type="image/png" href="./images/logo-icon.png"/>
+    <title>Monster Admin</title>
   </head>
   <body>
 
-    <header class="header-section">
+    <header class="header-section fixed-top bg-white">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light navbar-height fixed-top bg-white">
-                <div class="container-fluid">
-                <a class="navbar-brand logo-r-p" href="#"><img src="./images/logo.png" alt=""></a>
-                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon icon-hover"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <a href="#" class="me-3 d-none d-lg-block icon-hover"><img src="./images/collapse-btn.png" alt=""></a>
-                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex flex-row">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link mynav-link show-notification-dot" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="icon-hover" src="./images/nav-msg.png" alt="">
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link mynav-link show-notification-dot" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="icon-hover" src="./images/nav-msgcover.png" alt="">
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link mynav-link show-notification-dot" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="icon-hover" src="./images/notification-bell.png" alt="">
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form action="" class="mx-auto ps-4">
-                        <div class="input-group search-bar overflow-hidden ">
-                            <span class="input-group-text bg-white border-0 pe-2" id="basic-addon1"><img src="./images/search-icon.png" alt=""></span>
-                            <input class="form-control border-0 shadow-none search-input" type="search" placeholder="Search" aria-label="Search">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-height">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand logo-r-p" href="#"><img class="d-none d-sm-block" src="./images/logo.png" alt=""><img class="d-block d-sm-none" src="./images/logo-icon.png" alt=""></a>
+                    <div class="collapse position-absolute nav-search-bar w-100 overflow-hidden" id="collapseExample">
+                        <div class="input-group search-input-height">
+                          <span class="input-group-text bg-white border-0" id="basic-addon1"><img src="./images/search-icon.png"
+                              alt=""></span>
+                          <input type="text" class="form-control border-0 search-input shadow-none" placeholder="Search anything"
+                            aria-label="Username" aria-describedby="basic-addon1">
                         </div>
-                    </form>
-                    <div class="dropdown">
-                        <button class="btn shadow-none" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                          <img class="pe-1" src="./images/mark-propfile-pic.png" alt="">
-                          <span class="user-name">Mark Sanders</span>
-                          <img class="icon-hover" src="./images/dropdown-arrow.png" alt="">
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="d-block d-lg-none"><img class="pe-2 pe-sm-3 search-icon1" src="./images/search-icon.png" alt=""
+                            data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">
+                        </div>
+                        <div>
+                            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon icon-hover"></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <a href="#" class="me-3 d-none d-lg-block icon-hover collapse-btn"><img src="./images/collapse-btn.png" alt=""></a>
+                        <ul class="navbar-nav mb-0 mb-lg-2 mb-lg-0 d-flex flex-row">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link mynav-link show-notification-dot ps-1 ps-lg-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="icon-hover" src="./images/nav-msg.png" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link mynav-link show-notification-dot" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="icon-hover" src="./images/nav-msgcover.png" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link mynav-link show-notification-dot" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="icon-hover" src="./images/notification-bell.png" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                      </div>
-                </div>
+                        <form action="" class="mx-auto ps-4 d-none d-lg-block">
+                            <div class="input-group search-bar overflow-hidden ">
+                                <span class="input-group-text bg-white border-0 pe-2" id="basic-addon1"><img src="./images/search-icon.png" alt=""></span>
+                                <input class="form-control border-0 shadow-none search-input" type="search" placeholder="Search" aria-label="Search">
+                            </div>
+                        </form>
+                        <div class="dropdown ms-auto ms-lg-0">
+                            <button class="btn shadow-none pe-0 pe-lg-2" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="pe-1" src="./images/mark-propfile-pic.png" alt="">
+                            <span class="user-name d-none d-sm-inline">Mark Sanders</span>
+                            <img class="icon-hover" src="./images/dropdown-arrow.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
 
-    <div class="container px-0">
-        <aside class="side-bar position-fixed">
-            <ul class="sidebar-style">
-                <li>
-                    <a href="#" class="text-decoration-none">PERSONAL</a>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <a class="btn w-100 shadow-none" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                          <div class="d-flex justify-content-between">
-                            <span>Dashboard</span>
-                            <div><img class="" src="./images/dropdown-arrow.png" alt=""></div>
-                          </div>
-                        </a>
-                        <ul class="dropdown-menu w-100 border-0" aria-labelledby="dropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <div class="container px-0 cont">
+        <aside class="side-bar position-fixed big-sidebar">
+            <div>
+                <ul class="sidebar-style p-0">
+                    <li>
+                        <div class="d-flex w-100 side-li align-items-center">
+                            <span class="sidebar-title ps-4">PERSONAL</span>
+                            <span class="nav-small-cap">...</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 side-li align-items-center">
+                            <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/dashboard.png" alt=""><span>Dashboard</span></a>
+                            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow" src="./images/dropdown-arrow.png" alt=""></div>
+                        </div>
+                        <ul class="list-style-none d-none">
+                            <li>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+                                </div>
+                            </li>
                         </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="#" class="text-decoration-none">PERSONAL</a>
-                </li>
-            </ul>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 side-li align-items-center">
+                            <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/inbox.png" alt=""><span>Inbox</span></a>
+                            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow" src="./images/dropdown-arrow.png" alt=""></div>
+                        </div>
+                        <ul class="list-style-none d-none">
+                            <li>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 side-li align-items-center">
+                            <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/ui-elements.png" alt=""><span>UI Elements</span></a>
+                            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow" src="./images/dropdown-arrow.png" alt=""></div>
+                        </div>
+                        <ul class="list-style-none d-none">
+                            <li>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 side-li align-items-center">
+                            <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/forms.png" alt=""><span>Forms</span></a>
+                            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow" src="./images/dropdown-arrow.png" alt=""></div>
+                        </div>
+                        <ul class="list-style-none d-none">
+                            <li>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-divider"></li>
+                    <li>
+                        <div class="d-flex w-100 side-li align-items-center">
+                            <span class="sidebar-title ps-4">PROFESSIONAL</span>
+                            <span class="nav-small-cap">...</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 side-li align-items-center">
+                            <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/tables.png" alt=""><span>Tables</span></a>
+                            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow" src="./images/dropdown-arrow.png" alt=""></div>
+                        </div>
+                        <ul class="list-style-none d-none">
+                            <li>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 side-li align-items-center">
+                            <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/charts.png" alt=""><span>Charts</span></a>
+                            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow" src="./images/dropdown-arrow.png" alt=""></div>
+                        </div>
+                        <ul class="list-style-none d-none">
+                            <li>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 side-li align-items-center">
+                            <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/widgets.png" alt=""><span>Widgets</span></a>
+                        </div>
+                        <ul class="list-style-none d-none">
+                            <li>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 side-li align-items-center">
+                            <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/icons.png" alt=""><span>Icons</span></a>
+                            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow" src="./images/dropdown-arrow.png" alt=""></div>
+                        </div>
+                        <ul class="list-style-none d-none">
+                            <li>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 side-li align-items-center">
+                            <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/map.png" alt=""><span>Maps</span></a>
+                            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow" src="./images/dropdown-arrow.png" alt=""></div>
+                        </div>
+                        <ul class="list-style-none d-none">
+                            <li>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 side-li align-items-center">
+                            <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/pages.png" alt=""><span>Pages</span></a>
+                            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow" src="./images/dropdown-arrow.png" alt=""></div>
+                        </div>
+                        <ul class="list-style-none d-none">
+                            <li>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 side-li align-items-center">
+                            <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/calender.png" alt=""><span>Calendar</span></a>
+                            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow" src="./images/dropdown-arrow.png" alt=""></div>
+                        </div>
+                        <ul class="list-style-none d-none">
+                            <li>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 side-li align-items-center">
+                            <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/multilevel.png" alt=""><span>Multi Level</span></a>
+                            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow" src="./images/dropdown-arrow.png" alt=""></div>
+                        </div>
+                        <ul class="list-style-none d-none">
+                            <li>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+                                </div>
+                                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                                    <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-divider"></li>
+                    <li>
+                        <div class="d-flex w-100 side-li align-items-center">
+                            <span class="sidebar-title ps-4">SUPPORT</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 support-li align-items-center">
+                            <a href="#" class="text-decoration-none support-link">Documentation</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 support-li align-items-center">
+                            <a href="#" class="text-decoration-none support-link">Videos</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex justify-content-between w-100 support-li align-items-center">
+                            <a href="#" class="text-decoration-none support-link">Frequently Asked Questions</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
         </aside>
     
         <main class="main-containt">
@@ -211,7 +471,7 @@
                                 <div class="d-flex flex-xl-row flex-column justify-content-between sale-comp">
                                     <div>
                                         <h4 class="chart-h mb-0">Sales Comparison</h4>
-                                        <select class="form-select shadow-none myselecet border-0 bg-white p-0 d-inline-block" aria-label="Default select example">
+                                        <select class="form-select shadow-none myselecet border-0 bg-white p-0 d-inline-block w-65" aria-label="Default select example">
                                             <option selected>January 2021</option>
                                             <option value="1">February 2021</option>
                                             <option value="2">March 2021</option>
@@ -562,7 +822,7 @@
         </main>
     </div>
     
-
     <script src="./js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="./js/style.js"></script>
   </body>
 </html>

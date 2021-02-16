@@ -10,6 +10,7 @@ p {
 
 
 /* nav */
+
 .search-bar {
     border: 1px solid  rgb(219, 227, 231);
     border-radius: 25px;
@@ -19,7 +20,9 @@ p {
 }
 .navbar-expand-lg .navbar-nav .mynav-link {
     padding: 11px 17px;
+    /* padding: 0 17px; */
 }
+
 .user-name {
     font-size: 15px;
     font-weight: normal;
@@ -52,16 +55,109 @@ p {
 
 
 /* aside */
+.side-li {
+    padding: 13px 0;
+}
+.side-sublink {
+    padding: 9px 0;
+}
+.cont {
+    margin-left: 0;
+    max-width: 1428px !important;
+}
+.sidebar-style {
+    list-style: none;
+    background-color: #f2f7f8;
+}
+.sub-list {
+    list-style: none;
+}
+.side-li.active {
+    background-color: white;
+}
 .side-bar {
     width: 265px;
     height: 100%;
+    top: 69px;
+    overflow: scroll;
 }
-.Dashboard-title {
-    font-size: 24px;
-    color: rgb(17, 160, 248);
+.sidebar-link, .sidebar-sublink {
+    font-size: 15px;
+    color: rgb(166, 175, 187);
+    font-weight: 400;
+    padding-left: 30px;
 }
+.sidebar-sublink.active, .sidebar-sublink:hover{
+    font-weight: 500;
+    color: rgb(166, 175, 187);
+}
+.side-li a img {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%) hue-rotate(154deg) brightness(88%) contrast(80%);
+}
+.side-li:hover .sidebar-link, .sidebar-link.active, .support-link:hover{
+    font-size: 15px;
+    font-weight: 500;
+    /* color: rgb(17, 160, 248); */
+    filter: invert(56%) sepia(55%) saturate(7040%) hue-rotate(190deg) brightness(114%) contrast(94%);
+}
+.sidebar-title{
+    font-size: 12px;
+    color: rgb(166, 175, 187);
+    font-weight: 500;
+    line-height: 24px;
+}
+.list-style-none {
+    list-style: none;
+}
+.icon-gap {
+    margin-right: 12px;
+}
+.nav-divider {
+    margin-bottom: 13px;
+}
+.support-link {
+    font-size: 15px;
+    color: rgb(166, 175, 187);
+    font-weight: 400;
+    padding-left: 24px;
+}
+.support-li {
+    padding: 4px 0;
+}
+/* .small-sidebar {
+    width: 75px;
+    top: 58px;
+} */
+.nav-small-cap {
+    display: none;
+    padding: 0 34px;
+    filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%) hue-rotate(154deg) brightness(88%) contrast(80%);
+}
+  
 
-
+.small-sidebar ul span, .small-sidebar .side-li div img {
+    display: none;
+}
+.small-sidebar.side-bar {
+    width: 75px;
+    top: 75px;
+}
+.small-sidebar .nav-small-cap {
+    display: block;
+    padding: 0 34px;
+    filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%) hue-rotate(154deg) brightness(88%) contrast(80%);
+}
+  
+.small-sidebar:hover ul span, .side-bar:hover .side-li div img {
+    display: inline-block;
+}
+.small-sidebar:hover {
+    width: 265px; 
+    top: 69px;
+}
+.small-sidebar:hover .nav-small-cap {
+    display: none;
+} 
 
 
 
@@ -80,13 +176,10 @@ p {
 .home {
     color: #54667a;
 }
-.sidebar-style {
-    list-style: none;
-    padding: 15px;
-}
+
 .main-containt {
     margin-left: 265px;
-    padding: 88px 31px 0 31px;
+    padding: 90px 20px 0 32px;
 }
 .create-btn-group {
     border-radius: 3px;
@@ -106,7 +199,14 @@ p {
 
 
 
-
+.Dashboard-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(17, 160, 248);
+}
+.w-65 {
+ width: 65%;
+}
 .myselecet {
     color: #54667a;
     background-color: rgb(242, 247, 248);
@@ -374,7 +474,7 @@ table td {
 .activities-margin {
     margin-bottom: 38px;
 }
-.icon-hover:hover {
+.icon-hover:hover, .side-li:hover div ,.blue-arrow{
     filter: invert(56%) sepia(55%) saturate(7040%) hue-rotate(190deg) brightness(114%) contrast(94%);
 }
 
@@ -394,18 +494,48 @@ table td {
 .footer-theamdesigner:hover {
     color: rgb(0, 158, 251);
 }
-  
-  
-  
-  
+
+ 
+
   
 @media (min-width: 1200px) {
     .container {
-      max-width: 1440px;
+      max-width: 1416px;
     }
+}
+@media (max-width: 1200px) {
+   
 }
 @media (max-width: 992px) {
     .collapsing, .collapse.show {
         display: flex;
+    }
+    .nav-search-bar {
+        top: 53px;
+        box-shadow: 0px 1px 3px 0px rgba(29, 26, 27, 0.2);
+        border-radius: 25px;
+        z-index: 100;
+    }
+    ul span, .side-li div img {
+        display: none;
+    }
+    .side-bar {
+        width: 75px;
+        top: 58px;
+    }
+    .nav-small-cap {
+        display: block;
+        padding: 0 34px;
+        filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%) hue-rotate(154deg) brightness(88%) contrast(80%);
+    }
+    .side-bar:hover ul span, .side-bar:hover .side-li div img {
+        display: inline-block;
+    }
+    .side-bar:hover {
+        width: 265px; 
+        top: 69px;
+    }
+    .side-bar:hover .nav-small-cap {
+        display: none;
     }
 }
