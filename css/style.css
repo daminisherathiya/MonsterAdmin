@@ -91,10 +91,10 @@ p {
     background-color: white;
 }
 .side-bar {
-    width: 265px;
-    height: 100%;
-    top: 69px;
-    overflow: scroll;
+    width: 260px;
+    height: calc(100vh - 55px);
+    top: 70px;
+    overflow: auto;
     z-index: 100;
 }
 .sidebar-link, .sidebar-sublink {
@@ -200,7 +200,7 @@ p {
 }
 
 .main-containt {
-    margin-left: 265px;
+    margin-left: 260px;
     padding: 90px 32px 0 32px;
 }
 .create-btn-group {
