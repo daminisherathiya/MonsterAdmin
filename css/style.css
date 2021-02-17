@@ -77,9 +77,6 @@ p {
 .side-sublink {
     padding: 9px 0;
 }
-.cont {
-    max-width: 1440px !important;
-}
 .sidebar-style {
     list-style: none;
     background-color: #f2f7f8;
@@ -201,7 +198,7 @@ p {
 
 .main-containt {
     margin-left: 260px;
-    padding: 90px 15px 0 15px;
+    padding: 90px 32px 0 32px;
 }
 .create-btn-group {
     border-radius: 3px;
@@ -525,15 +522,6 @@ table td {
     color: rgb(0, 158, 251);
 }
 
- 
-
-  
-@media (min-width: 1200px) {
-    .container {
-      max-width: 1416px;
-    }
-}
-
 @media (max-width: 1300px) {
    .side-p {
        padding-left: 0;
@@ -549,11 +537,9 @@ table td {
     }
     .nav-search-bar {
         top: 71px;
-        left: 24px;
         box-shadow: 0px 1px 3px 0px rgba(29, 26, 27, 0.2);
         border-radius: 25px;
         z-index: 100;
-        width: 95%;
     }
     .main-containt {
         margin-left: 75px;
@@ -590,6 +576,13 @@ table td {
         display: none;
     }
 }
+
+@media (max-width: 767px) { 
+    .search-input {
+        padding: 14px 53px 14px 0;
+    }
+}
+
 @media (max-width: 575px) { 
     .side-bar {
         width: 265px; 
@@ -627,5 +620,8 @@ table td {
     }
     .card-total-counts {
         font-size: 21px;
+    }
+    .big-logo {
+        width: 155px;
     }
 }
