@@ -50,13 +50,18 @@ var collapse_btn = document.querySelector(".collapse-btn");
 collapse_btn.addEventListener("click", collapse_sidebar);
 function collapse_sidebar() {
   var side_bar = document.querySelector(".side-bar");
+  var navbar = document.querySelector(".navbar");
   if (side_bar.classList.contains("big-sidebar")) {
     side_bar.classList.remove("big-sidebar");
-    side_bar.classList.add("small-sidebar")
+    side_bar.classList.add("small-sidebar");
+    navbar.classList.remove("big-nav");
+    navbar.classList.add("small-nav");
   }
   else {
     side_bar.classList.add("big-sidebar");
-    side_bar.classList.remove("small-sidebar")
+    side_bar.classList.remove("small-sidebar");
+    navbar.classList.add("big-nav");
+    navbar.classList.remove("small-nav");
   }
 }
 var toggle_sidebar = document.querySelector(".toggle-sidebar");
@@ -65,3 +70,4 @@ function minimize_sidebar() {
   var side_bar = document.querySelector(".side-bar");
   side_bar.classList.toggle("minimize-sidebar");
 }
+

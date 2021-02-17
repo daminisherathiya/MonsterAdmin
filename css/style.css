@@ -14,7 +14,7 @@ p {
     top: 182%;
 }
 .profile-dropdown-menu {
-    top: 114%;
+    top: 99%;
 }
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
@@ -26,7 +26,7 @@ p {
 .logo-r-p {
     margin-right: 32px;
 }
-.navbar-expand-lg .navbar-nav .mynav-link {
+.navbar-expand-md .navbar-nav .mynav-link {
     padding: 0 17px;
 }
 
@@ -47,7 +47,8 @@ p {
     background-size: contain;
 }
 .navbar-height {
-    line-height: 52px;
+    min-height: 70px;
+    line-height: 70px;
 }
 .header-section {
     border-bottom: 1px solid #e9f1f3;
@@ -64,6 +65,12 @@ p {
 
 
 /* aside */
+.big-logo {
+    display: block;
+}
+.small-logo {
+    display: none;
+}
 .side-li {
     padding: 13px 0;
 }
@@ -144,7 +151,7 @@ p {
 }
   
 
-.small-sidebar ul span, .small-sidebar .side-li div img, .small-sidebar .support-link, .small-sidebar .list-style-none{
+.small-sidebar ul span, .small-sidebar .side-li div img, .small-sidebar .support-link, .small-sidebar .list-style-none, .small-nav .big-logo{
     display: none;
 }
 .small-sidebar .sidebar-link {
@@ -160,7 +167,7 @@ p {
     filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%) hue-rotate(154deg) brightness(88%) contrast(80%);
 }
   
-.small-sidebar:hover ul span, .small-sidebar:hover .side-li div img, .small-sidebar:hover .support-link, .small-sidebar:hover .list-style-none {
+.small-sidebar:hover ul span, .small-sidebar:hover .side-li div img, .small-sidebar:hover .support-link, .small-sidebar:hover .list-style-none, .small-nav .small-logo{
     display: inline-block;
 }
 .small-sidebar:hover {
@@ -541,10 +548,12 @@ table td {
         display: flex;
     }
     .nav-search-bar {
-        top: 70px;
+        top: 71px;
+        left: 24px;
         box-shadow: 0px 1px 3px 0px rgba(29, 26, 27, 0.2);
         border-radius: 25px;
         z-index: 100;
+        width: 95%;
     }
     .main-containt {
         margin-left: 75px;
@@ -566,6 +575,12 @@ table td {
     }
     .side-bar:hover ul span, .side-bar:hover .side-li div img, .side-bar:hover .support-link, .side-bar:hover .list-style-none {
         display: inline-block;
+    }
+    .big-logo {
+        display: none;
+    }
+    .small-logo {
+        display: block;
     }
     .side-bar:hover {
         width: 265px; 
@@ -594,7 +609,16 @@ table td {
     }
     .card-box {
       padding: 14px 14px;
-  }
+    }
+    .big-logo {
+        display: block;
+    }
+    .small-logo {
+        display: none;
+    }
+    .logo-r-p {
+        margin-right: 0;
+    }
 }
 @media (max-width: 356px){
     .seprator {

@@ -21,109 +21,107 @@
 <body>
 
   <header class="header-section fixed-top bg-white">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light navbar-height">
-        <div class="container-fluid px-0">
-          <div class="d-flex align-items-center">
-            <a class="navbar-brand logo-r-p" href="#"><img class="d-none d-sm-block" src="./images/logo.png" alt=""><img
-                class="d-block d-sm-none" src="./images/logo-icon.png" alt=""></a>
-            <a href="#" class="me-3 d-sm-none icon-hover toggle-sidebar"><img src="./images/collapse-btn.png"
-                alt=""></a>
-          </div>
-          <div class="collapse position-absolute nav-search-bar w-100 overflow-hidden" id="collapseExample">
-            <div class="input-group search-input-height">
-              <span class="input-group-text bg-white border-0" id="basic-addon1"><img src="./images/search-icon.png"
-                  alt=""></span>
-              <input type="text" class="form-control border-0 search-input shadow-none" placeholder="Search anything"
-                aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-          </div>
-          <div class="d-flex align-items-center">
-            <div class="d-block d-lg-none"><img class="pe-2 pe-sm-3 search-icon1" src="./images/search-icon.png" alt=""
-                data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                aria-controls="collapseExample">
-            </div>
-            <div>
-              <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon icon-hover"></span>
-              </button>
-            </div>
-          </div>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a href="#" class="me-3 d-none d-lg-block icon-hover collapse-btn"><img src="./images/collapse-btn.png"
-                alt=""></a>
-            <ul class="navbar-nav mb-0 d-flex flex-row">
-              <li class="nav-item dropdown">
-                <a class="nav-link mynav-link show-notification-dot ps-1 ps-lg-3" href="#" id="navbarDropdown"
-                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="icon-hover" src="./images/nav-msg.png" alt="">
-                </a>
-                <ul class="dropdown-menu position-absolute mydropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link mynav-link show-notification-dot" href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="icon-hover" src="./images/nav-msgcover.png" alt="">
-                </a>
-                <ul class="dropdown-menu position-absolute mydropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link mynav-link show-notification-dot" href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="icon-hover" src="./images/notification-bell.png" alt="">
-                </a>
-                <ul class="dropdown-menu position-absolute mydropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form action="" class="mx-auto ps-4 d-none d-lg-block">
-              <div class="input-group search-bar overflow-hidden ">
-                <span class="input-group-text bg-white border-0 pe-2" id="basic-addon1"><img
-                    src="./images/search-icon.png" alt=""></span>
-                <input class="form-control border-0 shadow-none search-input" type="search" placeholder="Search"
-                  aria-label="Search">
-              </div>
-            </form>
-            <div class="dropdown ms-auto ms-lg-0">
-              <button class="btn shadow-none pe-0 pe-lg-2" type="button" id="dropdownMenuButton"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <img class="pe-1" src="./images/mark-propfile-pic.png" alt="">
-                <span class="user-name d-none d-sm-inline">Mark Sanders</span>
-                <img class="icon-hover" src="./images/dropdown-arrow.png" alt="">
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end profile-dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
+    <nav class="navbar navbar-expand-md navbar-light navbar-height p-0">
+      <div class="container-fluid px-4">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand logo-r-p d-flex order-2 order-sm-1" href="#"><img class="big-logo" src="./images/logo.png" alt=""><img
+              class="small-logo" src="./images/logo-icon.png" alt=""></a>
+          <a href="#" class="me-3 d-sm-none icon-hover toggle-sidebar"><img src="./images/collapse-btn.png"
+              alt=""></a>
+        </div>
+        <div class="collapse position-absolute nav-search-bar overflow-hidden" id="collapseExample">
+          <div class="input-group search-input-height">
+            <span class="input-group-text bg-white border-0" id="basic-addon1"><img src="./images/search-icon.png"
+                alt=""></span>
+            <input type="text" class="form-control border-0 search-input shadow-none" placeholder="Search anything"
+              aria-label="Username" aria-describedby="basic-addon1">
           </div>
         </div>
-      </nav>
-    </div>
+        <div class="d-flex align-items-center">
+          <div class="d-block d-md-none"><img class="pe-2 pe-sm-3 search-icon1" src="./images/search-icon.png" alt=""
+              data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+              aria-controls="collapseExample">
+          </div>
+          <div>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon icon-hover"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="#" class="me-3 d-none d-lg-block icon-hover collapse-btn"><img src="./images/collapse-btn.png"
+              alt=""></a>
+          <ul class="navbar-nav mb-0 d-flex flex-row">
+            <li class="nav-item dropdown">
+              <a class="nav-link mynav-link show-notification-dot ps-1 ps-lg-3" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="icon-hover" src="./images/nav-msg.png" alt="">
+              </a>
+              <ul class="dropdown-menu position-absolute mydropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mynav-link show-notification-dot" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="icon-hover" src="./images/nav-msgcover.png" alt="">
+              </a>
+              <ul class="dropdown-menu position-absolute mydropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mynav-link show-notification-dot" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="icon-hover" src="./images/notification-bell.png" alt="">
+              </a>
+              <ul class="dropdown-menu position-absolute mydropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form action="" class="mx-auto ps-4 d-none d-md-block">
+            <div class="input-group search-bar overflow-hidden ">
+              <span class="input-group-text bg-white border-0 pe-2" id="basic-addon1"><img
+                  src="./images/search-icon.png" alt=""></span>
+              <input class="form-control border-0 shadow-none search-input" type="search" placeholder="Search"
+                aria-label="Search">
+            </div>
+          </form>
+          <div class="dropdown ms-auto ms-lg-0">
+            <button class="btn shadow-none pe-0 pe-lg-2" type="button" id="dropdownMenuButton"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="pe-1" src="./images/mark-propfile-pic.png" alt="">
+              <span class="user-name d-none d-sm-inline">Mark Sanders</span>
+              <img class="icon-hover" src="./images/dropdown-arrow.png" alt="">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end profile-dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
   <div class="container px-0 cont mx-auto">
   <!-----------------------------------------------
