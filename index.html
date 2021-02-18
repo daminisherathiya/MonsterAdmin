@@ -24,11 +24,26 @@
   <header class="header-section fixed-top bg-white">
     <nav class="navbar navbar-expand-md navbar-light navbar-height p-0">
       <div class="container-fluid px-0 mx-4 position-relative">
-        <div class="d-flex align-items-center">
-          <a class="navbar-brand logo-r-p d-flex order-2 order-sm-1" href="#"><img class="big-logo" src="./images/logo.png" alt=""><img
-              class="small-logo" src="./images/logo-icon.png" alt=""></a>
+        <div class="d-flex justify-content-between nav-width align-items-center">
           <a href="#" class="me-3 d-sm-none icon-hover toggle-sidebar"><img src="./images/collapse-btn.png"
-              alt=""></a>
+            alt=""></a>
+          <div class="vertically-center">
+            <a class="navbar-brand set-logo" href="#"><img class="big-logo" src="./images/logo.png" alt=""><img
+                class="small-logo" src="./images/logo-icon.png" alt=""></a>
+          </div>
+          <div class="vertically-center">
+            <div class="d-none d-sm-block d-md-none"><img class="pe-2 pe-sm-3 search-icon1" src="./images/search-icon.png" alt=""
+                data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+            </div>
+            <div>
+              <button class="navbar-toggler shadow-none border-0 p-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-ellipsis-h"></i>
+              </button>
+            </div>
+          </div> 
         </div>
         <div class="collapse position-absolute nav-search-bar overflow-hidden w-100" id="collapseExample">
           <div class="input-group search-input-height">
@@ -38,19 +53,7 @@
               aria-label="Username" aria-describedby="basic-addon1">
           </div>
         </div>
-        <div class="d-flex align-items-center">
-          <div class="d-none d-sm-block d-md-none"><img class="pe-2 pe-sm-3 search-icon1" src="./images/search-icon.png" alt=""
-              data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-              aria-controls="collapseExample">
-          </div>
-          <div>
-            <button class="navbar-toggler shadow-none border-0 p-0" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <i class="fas fa-ellipsis-h"></i>
-            </button>
-          </div>
-        </div>
+       
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <a href="#" class="me-3 d-none d-md-block icon-hover collapse-btn"><img src="./images/collapse-btn.png"
@@ -763,7 +766,7 @@
                   <h4 class="c-title mb-0">Projects of the Month</h4>
                 </div>
                 <div>
-                  <select class="form-select card-select border-0 shadow-none" aria-label="Default select example">
+                  <select class="form-select card-select border-0 shadow-none select-position" aria-label="Default select example">
                     <option selected>January 2017</option>
                     <option value="1">February 2017</option>
                     <option value="2">March 2017</option>
@@ -774,10 +777,10 @@
               <table class="table text-nowrap">
                 <thead>
                   <tr class="">
-                    <th class="table-header col1" scope="col">Assigned</th>
-                    <th class="table-header col2" scope="col">Name</th>
-                    <th class="table-header col3" scope="col">Priority</th>
-                    <th class="table-header col4" scope="col">Budget</th>
+                    <th class="table-header th-1" scope="col">Assigned</th>
+                    <th class="table-header th-2" scope="col">Name</th>
+                    <th class="table-header th-3" scope="col">Priority</th>
+                    <th class="table-header th-4" scope="col">Budget</th>
                   </tr>
                 </thead>
 
@@ -949,7 +952,7 @@
                   <p class="date-time mb-0">10:20 AM 20 may 2016</p>
                 </div>
               </div>
-              <a href="#" class="full-activity-link text-decoration-none px-2">Checkout Full Activities</a>
+              <div class="checkout-link"><a href="#" class="full-activity-link text-decoration-none px-2">Checkout Full Activities</a></div>
             </div>
           </div>
           <!-----------------------------------------------

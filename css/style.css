@@ -10,6 +10,10 @@ p {
 
 
 /* nav */
+.vertically-center {
+    display: flex;
+    align-items: center;
+}
 .mydropdown-menu {
     top: 182%;
 }
@@ -23,7 +27,7 @@ p {
     border: 1px solid  rgb(219, 227, 231);
     border-radius: 25px;
 }
-.logo-r-p {
+.set-logo {
     margin-right: 32px;
 }
 .navbar-expand-md .navbar-nav .mynav-link {
@@ -48,7 +52,6 @@ p {
 }
 .navbar-height {
     min-height: 70px;
-    line-height: 70px;
 }
 .header-section {
     border-bottom: 1px solid #e9f1f3;
@@ -344,6 +347,9 @@ ul span, .side-li div img, .support-link, .list-style-none {
     font-weight: 300;
     padding-right: 31px;
 }
+.select-position {
+    background-position: right .10rem center;
+}
 .b-purple-dot {
     width: 12px;
     height: 12px;
@@ -487,16 +493,16 @@ table td {
     color: rgb(100, 116, 133);
     font-weight: 400;
 }
-.col1 {
+.th-1 {
     width: 35%;
 }
-.col2 {
+.th-2 {
     width: 33%;
 }
-.col3 {
+.th-3 {
     width: 20%;
 }
-.col4 {
+.th-4 {
     width: 12%;
 }
 
@@ -519,6 +525,9 @@ table td {
     font-size: 14px;
     color: rgb(0, 158, 251);
     font-weight: 500;
+}
+.checkout-link {
+    margin-bottom: 3px;
 }
 .activities-margin {
     margin-bottom: 38px;
@@ -603,6 +612,12 @@ table td {
     .search-input {
         padding: 14px 53px 14px 0;
     }
+    .nav-width {
+        width: 100%;
+    }
+    .navbar-height {
+        line-height: 70px;
+    }
 }
 
 @media (max-width: 575px) { 
@@ -622,7 +637,7 @@ table td {
     .main-containt {
         margin-left: 0;
     }
-    .card-box {
+    .card-box, .chart-container {
       padding: 14px 14px;
     }
     .big-logo {
@@ -631,7 +646,7 @@ table td {
     .small-logo {
         display: none;
     }
-    .logo-r-p {
+    .set-logo {
         margin-right: 0;
     }
 }
