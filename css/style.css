@@ -147,7 +147,18 @@ p {
     filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%) hue-rotate(154deg) brightness(88%) contrast(80%);
 }
   
-
+ul span, .side-li div img, .support-link, .list-style-none {
+    display: inline-block;
+}  
+.sidebar-link {
+    padding-left: 30px;
+}
+.side-bar {
+    width: 260px;
+}
+.nav-small-cap {
+    display: none;
+}
 .small-sidebar ul span, .small-sidebar .side-li div img, .small-sidebar .support-link, .small-sidebar .list-style-none, .small-nav .big-logo{
     display: none;
 }
@@ -156,20 +167,31 @@ p {
 }
 .small-sidebar.side-bar {
     width: 75px;
-    top: 69px;
+    top: 70px;
 }
 .small-sidebar .nav-small-cap {
     display: block;
     padding: 0 30px;
     filter: brightness(0) saturate(100%) invert(85%) sepia(6%) saturate(662%) hue-rotate(154deg) brightness(88%) contrast(80%);
 }
-  
+.big-sidebar ul span, .big-sidebar .side-li div img, .big-sidebar .support-link, .big-sidebar .list-style-none {
+    display: inline-block;
+}  
+.big-sidebar .sidebar-link {
+    padding-left: 30px;
+}
+.big-sidebar.side-bar {
+    width: 260px;
+}
+.big-sidebar .nav-small-cap {
+    display: none;
+}
 .small-sidebar:hover ul span, .small-sidebar:hover .side-li div img, .small-sidebar:hover .support-link, .small-sidebar:hover .list-style-none, .small-nav .small-logo{
     display: inline-block;
 }
 .small-sidebar:hover {
     width: 265px; 
-    top: 69px;
+    top: 70px;
 }
 .small-sidebar:hover .nav-small-cap {
     display: none;
@@ -549,7 +571,7 @@ table td {
     }
     .side-bar {
         width: 75px;
-        top: 58px;
+        top: 70px;
     }
     .sidebar-link {
       padding-left: 24px;

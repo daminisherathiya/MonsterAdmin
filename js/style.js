@@ -50,8 +50,9 @@ var collapse_btn = document.querySelector(".collapse-btn");
 collapse_btn.addEventListener("click", collapse_sidebar);
 function collapse_sidebar() {
   var side_bar = document.querySelector(".side-bar");
+  var ul_span = document.querySelector("ul span");
   var navbar = document.querySelector(".navbar");
-  if (side_bar.classList.contains("big-sidebar")) {
+  if (window.getComputedStyle(ul_span).display !== "none") {
     side_bar.classList.remove("big-sidebar");
     side_bar.classList.add("small-sidebar");
     navbar.classList.remove("big-nav");
