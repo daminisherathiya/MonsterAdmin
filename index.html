@@ -605,13 +605,13 @@
 
       <div>
         <div class="row gx-3">
-          <div class="col-xl-8">
-            <div class="row gx-3">
+          <div class="col-xl-8 mb-3">
+            <div class="row gx-3 h-100">
               <!-----------------------------------------------
                 Start Sales of the Month
               ------------------------------------------------->
-              <div class="col-md-6 col-xl">
-                <div class="card-box mb-3">
+              <div class="col-md-6 col-xl mb-3 mb-md-0">
+                <div class="card-box h-100 ">
                   <div class="d-flex flex-sm-row  flex-column justify-content-between align-items-center">
                     <div>
                       <h4 class="c-title mb-0 text-nowrap">Sales of the Month</h4>
@@ -664,54 +664,58 @@
                 Start Sales Difference
               ------------------------------------------------->
               <div class="col-md-6 col-xl">
-                <div class="card-box px-md-0 py-3 mb-3">
-                  <div class="d-flex flex-sm-row flex-column  justify-content-between align-items-center mb-3 mb-sm-4">
-                    <div>
-                      <h4 class="c-title c-s-title mb-0">Sales Difference</h4>
+                <div class="h-100 d-flex flex-column justify-content-between">
+                  <div class="card-box px-md-0 py-3 mb-3 mb-md-0">
+                    <div class="d-flex flex-sm-row flex-column  justify-content-between align-items-center mb-3 mb-sm-4">
+                      <div>
+                        <h4 class="c-title c-s-title mb-0">Sales Difference</h4>
+                      </div>
+                      <div>
+                        <select class="form-select card-select border-0 shadow-none" aria-label="Default select example">
+                          <option>January 2017</option>
+                          <option selected value="1">February 2017</option>
+                          <option value="2">March 2017</option>
+                          <option value="3">April 2017</option>
+                        </select>
+                      </div>
                     </div>
-                    <div>
-                      <select class="form-select card-select border-0 shadow-none" aria-label="Default select example">
-                        <option>January 2017</option>
-                        <option selected value="1">February 2017</option>
-                        <option value="2">March 2017</option>
-                        <option value="3">April 2017</option>
-                      </select>
+                    <div class="d-flex justify-content-between px-4 mb-md-2">
+                      <div class="py-4">
+                        <h6 class="card-total-counts mb-1">$4316</h6>
+                        <p class="total-sales mb-0">(150-165 Sales)</p>
+                      </div>
+                      <div>
+                        <img class="pe-1 img-fluid" src="./images/sale-diffence.png" alt="">
+                      </div>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-between px-4 mb-md-2">
-                    <div class="py-4">
-                      <h6 class="card-total-counts mb-1">$4316</h6>
-                      <p class="total-sales mb-0">(150-165 Sales)</p>
+                  <div class="card-box px-md-0 py-3">
+                    <div class="d-flex flex-sm-row flex-column  justify-content-between align-items-center mb-3 mb-sm-4">
+                      <div>
+                        <h4 class="c-title c-s-title mb-0">Sales Prediction</h4>
+                      </div>
+                      <div>
+                        <select class="form-select card-select border-0 shadow-none" aria-label="Default select example">
+                          <option>January 2017</option>
+                          <option selected value="1">February 2017</option>
+                          <option value="2">March 2017</option>
+                          <option value="3">April 2017</option>
+                        </select>
+                      </div>
                     </div>
-                    <div>
-                      <img class="pe-1 img-fluid" src="./images/sale-diffence.png" alt="">
+                    <div class="d-flex justify-content-between px-4 mb-md-1">
+                      <div class="py-4">
+                        <h6 class="card-total-counts mb-1">$3528</h6>
+                        <p class="total-sales mb-0">(150-165 Sales)</p>
+                      </div>
+                      <div>
+                        <img class="img-fluid mt-3" src="./images/sales-prediction.png" alt="">
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="card-box px-md-0 py-3 mb-3">
-                  <div class="d-flex flex-sm-row flex-column  justify-content-between align-items-center mb-3 mb-sm-4">
-                    <div>
-                      <h4 class="c-title c-s-title mb-0">Sales Prediction</h4>
-                    </div>
-                    <div>
-                      <select class="form-select card-select border-0 shadow-none" aria-label="Default select example">
-                        <option>January 2017</option>
-                        <option selected value="1">February 2017</option>
-                        <option value="2">March 2017</option>
-                        <option value="3">April 2017</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between px-4 mb-md-1">
-                    <div class="py-4">
-                      <h6 class="card-total-counts mb-1">$3528</h6>
-                      <p class="total-sales mb-0">(150-165 Sales)</p>
-                    </div>
-                    <div>
-                      <img class="img-fluid mt-3" src="./images/sales-prediction.png" alt="">
-                    </div>
-                  </div>
-                </div>
+                
+                
               </div>
               <!-----------------------------------------------
                 End Sales Difference
@@ -786,7 +790,7 @@
             Start Projects of the Month
           ------------------------------------------------->
           <div class="col-xl-8 mb-3 mb-xl-0">
-            <div class="card-box pb-0 overflow-auto">
+            <div class="card-box pb-0 overflow-auto h-100">
               <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center mb-2">
                 <div>
                   <h4 class="c-title mb-0">Projects of the Month</h4>
