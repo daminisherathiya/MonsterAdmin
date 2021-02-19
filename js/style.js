@@ -1,23 +1,28 @@
 var side_lis = document.querySelectorAll(".side-li");
-side_lis.forEach(element => {
+var sidebar_link = document.querySelectorAll(".sidebar-link");
+sidebar_link.forEach(element => {
   element.addEventListener("click", open_list);
 });
 function open_list(event) {
   var is_open = true;
-  if (event.currentTarget.nextElementSibling.classList.contains("d-none")) {
+  // console.log(event.currentTarget.parentElement.querySelector("ul"))
+  if (event.currentTarget.parentElement.querySelector("ul").classList.contains("d-none")) {
     is_open = false;
   }
 
-  side_lis.forEach(element => {
-    if (element.nextElementSibling) {
-      element.nextElementSibling.classList.add("d-none");
+  sidebar_link.forEach(element => {
+    // console.log(element.parentElement.querySelector("ul"));
+    if (element.parentElement.querySelector("ul")) {
+      element.parentElement.querySelector("ul").classList.add("d-none");
     }
+    console.log(element);
     element.classList.remove("active");
+    // console.log(element.querySelector("a"));
     if (element.querySelector("a")) {
       element.querySelector("a").classList.remove("active");
     }
-    var arrow_imgs = element.querySelectorAll("div > img");
-
+    var arrow_imgs = element.querySelectorAll("a div:nth-child(2) > img");
+    // console.log(arrow_imgs);
     if (arrow_imgs.length) {
       arrow_imgs[0].classList.remove("d-none");
       arrow_imgs[1].classList.add("d-none");
@@ -25,10 +30,13 @@ function open_list(event) {
   });
 
   if (!is_open) {
+    // console.log(event.currentTarget);
     event.currentTarget.classList.add("active");
-    event.currentTarget.querySelector("a").classList.add("active");
-    event.currentTarget.nextElementSibling.classList.remove("d-none");
-    var arrow_imgs = event.currentTarget.querySelectorAll("div > img");
+    // console.log(event.currentTarget);
+    // event.currentTarget.parentElement.classList.add("active");
+    console.log(event.currentTarget.parentElement.querySelector("ul"))
+    event.currentTarget.parentElement.querySelector("ul").classList.remove("d-none");
+    var arrow_imgs = event.currentTarget.querySelectorAll("a div:nth-child(2) > img");
     arrow_imgs[0].classList.add("d-none");
     arrow_imgs[1].classList.remove("d-none");
   }

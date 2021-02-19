@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="./css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -127,304 +126,331 @@
       </div>
     </nav>
   </header>
-  <div class="container-fluid px-0">
-  <!-----------------------------------------------
+    <!-----------------------------------------------
     Start sidebar
   ------------------------------------------------->
-    <aside class="side-bar position-fixed minimize-sidebar">
-      <div>
-        <ul class="sidebar-style p-0">
-          <li>
-            <div class="d-flex w-100 side-li align-items-center">
-              <span class="sidebar-title ps-4">PERSONAL</span>
-              <span class="nav-small-cap">...</span>
+  <aside class="side-bar position-fixed minimize-sidebar">
+    <div>
+      <ul class="sidebar-style p-0">
+        <li>
+          <div class="d-flex w-100 sidebar-link ps-0 align-items-center">
+            <span class="sidebar-title ps-4">PERSONAL</span>
+            <span class="nav-small-cap">...</span>
+          </div>
+        </li>
+        <li class="side-li ">
+          <a href="#" class="text-decoration-none sidebar-link d-flex justify-content-between align-items-center">
+            <div>
+              <img class="icon-gap" src="./images/dashboard.png"alt="">
+              <span>Dashboard</span>
             </div>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 side-li align-items-center">
-              <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/dashboard.png"
-                  alt=""><span>Dashboard</span></a>
-              <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
-                  src="./images/dropdown-arrow.png" alt=""></div>
+            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
+              src="./images/dropdown-arrow.png" alt=""></div>
+          </a>
+          <ul class="list-style-none d-none">
+            <li>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="side-li">
+          <a href="#" class="text-decoration-none sidebar-link d-flex justify-content-between align-items-center">
+            <div>
+              <img class="icon-gap" src="./images/inbox.png"alt="">
+              <span>Inbox</span>
             </div>
-            <ul class="list-style-none d-none">
-              <li>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 side-li align-items-center">
-              <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/inbox.png"
-                  alt=""><span>Inbox</span></a>
-              <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
-                  src="./images/dropdown-arrow.png" alt=""></div>
+            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
+              src="./images/dropdown-arrow.png" alt=""></div>
+          </a>
+          <ul class="list-style-none d-none">
+            <li>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="side-li">
+          <a href="#" class="text-decoration-none sidebar-link d-flex justify-content-between align-items-center">
+            <div>
+              <img class="icon-gap" src="./images/ui-elements.png"alt="">
+              <span>UI Elements</span>
             </div>
-            <ul class="list-style-none d-none">
-              <li>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 side-li align-items-center">
-              <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/ui-elements.png"
-                  alt=""><span>UI Elements</span></a>
-              <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
-                  src="./images/dropdown-arrow.png" alt=""></div>
+            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
+              src="./images/dropdown-arrow.png" alt=""></div>
+          </a>
+          <ul class="list-style-none d-none">
+            <li>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="side-li">
+          <a href="#" class="text-decoration-none sidebar-link d-flex justify-content-between align-items-center">
+            <div>
+              <img class="icon-gap" src="./images/forms.png"alt="">
+              <span>Forms</span>
             </div>
-            <ul class="list-style-none d-none">
-              <li>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 side-li align-items-center">
-              <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/forms.png"
-                  alt=""><span>Forms</span></a>
-              <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
-                  src="./images/dropdown-arrow.png" alt=""></div>
+            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
+              src="./images/dropdown-arrow.png" alt=""></div>
+          </a>
+          <ul class="list-style-none d-none">
+            <li>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-divider"></li>
+        <li>
+          <div class="d-flex w-100 side-li align-items-center">
+            <span class="sidebar-title ps-4">PROFESSIONAL</span>
+            <span class="nav-small-cap">...</span>
+          </div>
+        </li>
+        <li class="side-li">
+          <a href="#" class="text-decoration-none sidebar-link d-flex justify-content-between align-items-center">
+            <div>
+              <img class="icon-gap" src="./images/tables.png"alt="">
+              <span>Tables</span>
             </div>
-            <ul class="list-style-none d-none">
-              <li>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-divider"></li>
-          <li>
-            <div class="d-flex w-100 side-li align-items-center">
-              <span class="sidebar-title ps-4">PROFESSIONAL</span>
-              <span class="nav-small-cap">...</span>
+            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
+              src="./images/dropdown-arrow.png" alt=""></div>
+          </a>
+          <ul class="list-style-none d-none">
+            <li>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="side-li">
+          <a href="#" class="text-decoration-none sidebar-link d-flex justify-content-between align-items-center">
+            <div>
+              <img class="icon-gap" src="./images/charts.png"alt="">
+              <span>Charts</span>
             </div>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 side-li align-items-center">
-              <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/tables.png"
-                  alt=""><span>Tables</span></a>
-              <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
-                  src="./images/dropdown-arrow.png" alt=""></div>
+            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
+              src="./images/dropdown-arrow.png" alt=""></div>
+          </a>
+          <ul class="list-style-none d-none">
+            <li>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="side-li">
+          <a href="#" class="text-decoration-none sidebar-link d-flex justify-content-between align-items-center">
+            <div>
+              <img class="icon-gap" src="./images/widgets.png"alt="">
+              <span>Widgets</span>
             </div>
-            <ul class="list-style-none d-none">
-              <li>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 side-li align-items-center">
-              <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/charts.png"
-                  alt=""><span>Charts</span></a>
-              <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
-                  src="./images/dropdown-arrow.png" alt=""></div>
+            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
+              src="./images/dropdown-arrow.png" alt=""></div>
+          </a>
+          <ul class="list-style-none d-none">
+            <li>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="side-li">
+          <a href="#" class="text-decoration-none sidebar-link d-flex justify-content-between align-items-center">
+            <div>
+              <img class="icon-gap" src="./images/icons.png"alt="">
+              <span>Icons</span>
             </div>
-            <ul class="list-style-none d-none">
-              <li>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 side-li align-items-center">
-              <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/widgets.png"
-                  alt=""><span>Widgets</span></a>
+            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
+              src="./images/dropdown-arrow.png" alt=""></div>
+          </a>
+          <ul class="list-style-none d-none">
+            <li>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="side-li">
+          <a href="#" class="text-decoration-none sidebar-link d-flex justify-content-between align-items-center">
+            <div>
+              <img class="icon-gap" src="./images/map.png"alt="">
+              <span>Maps</span>
             </div>
-            <ul class="list-style-none d-none">
-              <li>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 side-li align-items-center">
-              <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/icons.png"
-                  alt=""><span>Icons</span></a>
-              <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
-                  src="./images/dropdown-arrow.png" alt=""></div>
+            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
+              src="./images/dropdown-arrow.png" alt=""></div>
+          </a>
+          <ul class="list-style-none d-none">
+            <li>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="side-li">
+          <a href="#" class="text-decoration-none sidebar-link d-flex justify-content-between align-items-center">
+            <div>
+              <img class="icon-gap" src="./images/pages.png"alt="">
+              <span>Pages</span>
             </div>
-            <ul class="list-style-none d-none">
-              <li>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 side-li align-items-center">
-              <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/map.png"
-                  alt=""><span>Maps</span></a>
-              <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
-                  src="./images/dropdown-arrow.png" alt=""></div>
+            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
+              src="./images/dropdown-arrow.png" alt=""></div>
+          </a>
+          <ul class="list-style-none d-none">
+            <li>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="side-li">
+          <a href="#" class="text-decoration-none sidebar-link d-flex justify-content-between align-items-center">
+            <div>
+              <img class="icon-gap" src="./images/calender.png"alt="">
+              <span>Calendar</span>
             </div>
-            <ul class="list-style-none d-none">
-              <li>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 side-li align-items-center">
-              <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/pages.png"
-                  alt=""><span>Pages</span></a>
-              <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
-                  src="./images/dropdown-arrow.png" alt=""></div>
+            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
+              src="./images/dropdown-arrow.png" alt=""></div>
+          </a>
+          <ul class="list-style-none d-none">
+            <li>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="side-li">
+          <a href="#" class="text-decoration-none sidebar-link d-flex justify-content-between align-items-center">
+            <div>
+              <img class="icon-gap" src="./images/multilevel.png"alt="">
+              <span>Multi Level</span>
             </div>
-            <ul class="list-style-none d-none">
-              <li>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 side-li align-items-center">
-              <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/calender.png"
-                  alt=""><span>Calendar</span></a>
-              <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
-                  src="./images/dropdown-arrow.png" alt=""></div>
-            </div>
-            <ul class="list-style-none d-none">
-              <li>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 side-li align-items-center">
-              <a href="#" class="text-decoration-none sidebar-link"><img class="icon-gap" src="./images/multilevel.png"
-                  alt=""><span>Multi Level</span></a>
-              <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
-                  src="./images/dropdown-arrow.png" alt=""></div>
-            </div>
-            <ul class="list-style-none d-none">
-              <li>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
-                </div>
-                <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
-                  <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-divider"></li>
-          <li>
-            <div class="d-flex w-100 side-li align-items-center">
-              <span class="sidebar-title ps-4">SUPPORT</span>
-            </div>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 support-li align-items-center">
-              <a href="#" class="text-decoration-none support-link">Documentation</a>
-            </div>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 support-li align-items-center">
-              <a href="#" class="text-decoration-none support-link">Videos</a>
-            </div>
-          </li>
-          <li class="border-left">
-            <div class="d-flex justify-content-between w-100 support-li align-items-center">
-              <a href="#" class="text-decoration-none support-link">Frequently Asked Questions</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+            <div><img class="me-3" src="./images/right-arrow.png" alt=""><img class="me-3 d-none blue-arrow"
+              src="./images/dropdown-arrow.png" alt=""></div>
+          </a>
+          <ul class="list-style-none d-none">
+            <li>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Minimal Version</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Complexed One</a>
+              </div>
+              <div class="d-flex justify-content-between w-100 side-sublink align-items-center">
+                <a href="#" class="text-decoration-none sidebar-sublink">Simple Version</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-divider"></li>
+        <li>
+          <div class="d-flex w-100 side-li align-items-center">
+            <span class="sidebar-title ps-4">SUPPORT</span>
+          </div>
+        </li>
+        <li class="side-li">
+          <a href="#" class="d-flex justify-content-between w-100 support-li align-items-center text-decoration-none">
+              <span class="support-link">Documentation</span>
+          </a>
+        </li>
+        <li class="side-li">
+          <a href="#" class="d-flex justify-content-between w-100 support-li align-items-center text-decoration-none">
+            <span class="support-link">Videos</span>
+          </a>
+        </li>
+        <li class="side-li">
+          <a href="#" class="d-flex justify-content-between w-100 support-li align-items-center text-decoration-none">
+            <span class="support-link">Frequently Asked Questions</span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    </aside>
-  <!-----------------------------------------------
-    End sidebar
-  ------------------------------------------------->
+  </aside>
+<!-----------------------------------------------
+  End sidebar
+------------------------------------------------->
+  <div class="container-fluid px-0 overflow-hidden">
+
 
     <div class="main-containt">
       <!-----------------------------------------------
@@ -586,12 +612,12 @@
               ------------------------------------------------->
               <div class="col-md-6 col-xl">
                 <div class="card-box mb-3">
-                  <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center">
+                  <div class="d-flex flex-sm-row  flex-column justify-content-between align-items-center">
                     <div>
-                      <h4 class="c-title mb-0">Sales of the Month</h4>
+                      <h4 class="c-title mb-0 text-nowrap">Sales of the Month</h4>
                     </div>
                     <div>
-                      <select class="form-select card-select border-0 shadow-none" aria-label="Default select example">
+                      <select class="form-select card-select border-0 shadow-none text-truncate" aria-label="Default select example">
                         <option selected>January 2017</option>
                         <option value="1">February 2017</option>
                         <option value="2">March 2017</option>
@@ -703,7 +729,7 @@
                 </div>
                 <div class="pe-xl-3 text-center text-xl-start ms-xl-3">
                   <a href="#" class="text-decoration-none">
-                    <h4 class="daniel-pro mb-0 ps-0">Daniel Kristeen</h4>
+                    <h4 class="daniel-pro mb-0 ps-0 text-nowrap">Daniel Kristeen</h4>
                   </a>
                   <p class="uiux-design">UIUX Designer</p>
                   <button class="btn follow-btn text-uppercase"><img class="me-2" src="./images/plus-icon.png"
@@ -786,7 +812,7 @@
 
                 <tbody>
                   <tr>
-                    <td class="border-left">
+                    <td class="table-left-border">
                       <div class="d-flex align-items-center">
                         <div><img class="me-2" src="./images/sunil-pic.png" alt=""></div>
                         <div>
@@ -803,7 +829,7 @@
                   </tr>
 
                   <tr>
-                    <td class="border-left">
+                    <td class="table-left-border">
                       <div class="d-flex align-items-center">
                         <div><img class="me-2" src="./images/andrev-pic.png" alt=""></div>
                         <div>
@@ -820,7 +846,7 @@
                   </tr>
 
                   <tr>
-                    <td class="border-left">
+                    <td class="table-left-border">
                       <div class="d-flex align-items-center">
                         <div><img class="me-2" src="./images/charis-pic.png" alt=""></div>
                         <div>
@@ -837,7 +863,7 @@
                   </tr>
 
                   <tr>
-                    <td class="border-left">
+                    <td class="table-left-border">
                       <div class="d-flex align-items-center">
                         <div><img class="me-2" src="./images/nirav-pic.png" alt=""></div>
                         <div>
@@ -854,7 +880,7 @@
                   </tr>
 
                   <tr>
-                    <td class="border-left">
+                    <td class="table-left-border">
                       <div class="d-flex align-items-center">
                         <div><img class="me-2" src="./images/micheal-pic.png" alt=""></div>
                         <div>
@@ -871,7 +897,7 @@
                   </tr>
 
                   <tr>
-                    <td class="border-left border-bottom-0">
+                    <td class="table-left-border border-bottom-0">
                       <div class="d-flex align-items-center">
                         <div><img class="me-2" src="./images/johnat-pic.png" alt=""></div>
                         <div>
@@ -968,9 +994,7 @@
     </div>
   </div>
 
-  <script src="./js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/style.js"></script>
 </body>
 
